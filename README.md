@@ -10,7 +10,7 @@ This tool serves two core purposes:
 
 ## 🚀 Key Features
 
-- 📷 Upload any image and generate natural captions
+- 📷 Upload any image and generate ALT Text
 - 🔍 Detect and flag harmful/inappropriate content
 - 🌐 Support for multilingual caption output (via Googletrans)
 - 🖼️ Retrieve and display similar images using Google Image Search
@@ -50,8 +50,8 @@ This tool serves two core purposes:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your_username/image-captioning-alttext.git
-cd image-captioning-alttext
+git clone https://github.com/Rohith1110/Image-Content-Moderation.git
+cd Image-Content-Moderation
 ```
 
 ### 2. Install dependencies
@@ -63,6 +63,7 @@ pip install -r requirements.txt
 ### 3. Download Flickr8k dataset
 - Download [Flickr8k images](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip)
 - Place it under `data/Images/`
+- For Sample purpose given some data
 
 ### 4. Train the model (if needed)
 ```bash
@@ -97,6 +98,5 @@ python gui/app.py
 ## 👥 Contributors
 
 - Rohith Kumar Chennareddy  
-- Rithwik  
-- Vamshi  
+- Rithwik Vamshi  
 (Team Project for CS521 - Spring 2025, University of Illinois Chicago)
