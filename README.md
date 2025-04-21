@@ -23,6 +23,9 @@ This system supports two real-world applications:
 - Users can upload an image, generate captions, and run moderation checks.  
 - Captions can also be translated to Tamil or Telugu, and similar images can be searched using Google.
 
+<div style="margin-left: 100px;">
+  <img width="270" alt="image" src="https://github.com/user-attachments/assets/88b18127-8ecc-4531-93d7-00f5453a1564" />
+</div>
 
 ## Key Features  
 
@@ -44,20 +47,57 @@ This system supports two real-world applications:
 - **Generated**: `man holding knife`  
 - ⚠️ Caption flagged as inappropriate  
 
-
 ## Dataset  
 
 - This project uses the **Flickr8K** dataset for training.  
 - Due to size constraints, the dataset is not included in the repository.  
 - Precomputed features (`features.p`) and the model file (`model_1.h5`) are included separately.
 
-## How to Run & Setup  
 
-**Step 1:** Install Python 3.8 or later.  
-**Step 2:** Download the Flickr8K dataset and precompute image features.  
-**Step 3:** Train the model using `training_caption_generator.py`.  
-**Step 4:** Run the GUI using `gui.py`.  
-The GUI will load the saved model and tokenizer, and allow you to generate captions, apply content filtering, and translate or search the caption.
+## Installation Instructions (How to Run) 
+
+To install the necessary dependencies, use the following commands:
+
+**Step 1:**:
+```
+python = >=3.8
+
+```
+**Step 2:**:
+```
+    torch==2.1.2,
+    transformers==4.37.0,
+    accelerate==0.26.1,
+    datasets,
+    fire,
+    wandb,
+    spacy,
+    benepar,
+    plotly,
+    kaleido,
+```
+
+**Step 3:**:
+You can download the Flickr8K dataset from the following sources
+```
+  [Kaggle - Flickr8k Dataset](https://www.kaggle.com/datasets/adityajn105/flickr8k)
+  [GitHub - Flickr8k_Dataset.zip](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip)
+```
+
+**Step 4:**:
+Train the model using `training_caption_generator.py`
+```
+python training_caption_generator.py
+```
+
+**Step 5:**:
+Run the GUI using `gui.py`.
+```
+python gui.py
+```
+
+The GUI will automatically load the saved model and tokenizer, allowing you to generate captions, apply content filtering, and optionally translate or search the caption.
+The input will be an image selected via the GUI, and the output will be either ALT text (caption) or a moderation alert if inappropriate content is detected.
 
 ## Future Work  
 
