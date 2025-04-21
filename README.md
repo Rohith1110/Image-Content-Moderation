@@ -1,4 +1,5 @@
-# Enhancing Image Captioning: Content Moderation & ALT Text Generation
+# Enhancing Image Captioning: 
+# Content Moderation & ALT Text Generation
 
 ## 📌 Overview
 
@@ -10,12 +11,12 @@ This tool serves two core purposes:
 
 ## 🚀 Key Features
 
-- 📷 Upload any image and generate ALT Text
-- 🔍 Detect and flag harmful/inappropriate content
-- 🌐 Support for multilingual caption output (via Googletrans)
-- 🖼️ Retrieve and display similar images using Google Image Search
-- 👨‍💻 User-friendly GUI built with Tkinter or Streamlit (based on version)
-- 🔁 Uses pre-trained **Xception** model for robust feature extraction
+- Upload any image and generate ALT Text
+- Detect and flag harmful/inappropriate content
+- Support for multilingual caption output (via Googletrans)
+- Retrieve and display similar images using Google Image Search
+- User-friendly GUI built with Tkinter (based on version)
+- Uses pre-trained **Xception** model for robust feature extraction
 
 ## 🧠 Tech Stack
 
@@ -27,53 +28,6 @@ This tool serves two core purposes:
 - **OpenCV, PIL** for image handling
 - **Tkinter** or **Streamlit** for GUI
 - **Flickr8K Dataset**
-
-## 📁 Project Structure
-
-.
-├── data/
-│   ├── Flickr8k.token.txt         # Raw caption file
-│   └── Images/                    # Flickr8k images
-├── models/
-│   └── caption_model.h5           # Trained model
-├── gui/
-│   └── app.py                     # User interface
-├── notebooks/
-│   └── training_pipeline.ipynb    # Model training pipeline
-├── utils/
-│   └── preprocessing.py           # Image and text cleaning scripts
-├── output/
-│   └── generated_captions.txt     # Captions output
-└── README.md
-
-## ⚙️ Installation & Setup
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/Rohith1110/Image-Content-Moderation.git
-cd Image-Content-Moderation
-```
-
-### 2. Install dependencies
-We recommend using a virtual environment:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Download Flickr8k dataset
-- Download [Flickr8k images](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip)
-- Place it under `data/Images/`
-- For Sample purpose given some data
-
-### 4. Train the model (if needed)
-```bash
-python train_model.py
-```
-
-### 5. Run the application
-```bash
-python gui/app.py
-```
 
 ## ✅ Example Usage
 
