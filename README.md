@@ -1,8 +1,6 @@
 # Enhancing Image Captioning  
 ## Content Moderation & ALT Text Generation  
 
----
-
 ## Overview  
 
 This project enhances automatic image captioning using a hybrid deep learning model that combines **CNN (Xception)** for image feature extraction and **RNN (LSTM)** for caption generation. It also integrates a lightweight **content moderation pipeline** to detect unsafe captions and supports **ALT text generation** to improve accessibility.
@@ -11,7 +9,6 @@ This system supports two real-world applications:
 - **Moderation**: Flagging unsafe or inappropriate content  
 - **Accessibility**: Generating clean and descriptive ALT text automatically  
 
----
 
 ## Project Workflow  
 
@@ -26,7 +23,6 @@ This system supports two real-world applications:
 - Users can upload an image, generate captions, and run moderation checks.  
 - Captions can also be translated to Tamil or Telugu, and similar images can be searched using Google.
 
----
 
 ## Key Features  
 
