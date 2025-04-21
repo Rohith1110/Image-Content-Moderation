@@ -44,15 +44,12 @@ This system supports two real-world applications:
 - **Generated**: `man holding knife`  
 - ⚠️ Caption flagged as inappropriate  
 
----
 
 ## Dataset  
 
 - This project uses the **Flickr8K** dataset for training.  
 - Due to size constraints, the dataset is not included in the repository.  
 - Precomputed features (`features.p`) and the model file (`model_1.h5`) are included separately.
-
----
 
 ## How to Run & Setup  
 
@@ -62,8 +59,6 @@ This system supports two real-world applications:
 **Step 4:** Run the GUI using `gui.py`.  
 The GUI will load the saved model and tokenizer, and allow you to generate captions, apply content filtering, and translate or search the caption.
 
----
-
 ## Future Work  
 
 - Integrate BERT or transformer-based content moderation  
@@ -71,7 +66,6 @@ The GUI will load the saved model and tokenizer, and allow you to generate capti
 - Extend support to video/audio captioning  
 - Build a browser extension for real-time captioning and moderation  
 
----
 
 ## Contributors  
 
