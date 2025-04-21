@@ -65,16 +65,10 @@ python = >=3.8
 ```
 **Step 2:**:
 ```
-    torch==2.1.2,
-    transformers==4.37.0,
-    accelerate==0.26.1,
-    datasets,
-    fire,
-    wandb,
-    spacy,
-    benepar,
-    plotly,
-    kaleido,
+tensorflow==2.12.0
+keras==2.12.0
+numpy
+Pillow
 ```
 
 **Step 3:**:
